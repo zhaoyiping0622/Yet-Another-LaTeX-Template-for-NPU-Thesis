@@ -173,11 +173,11 @@ and the derived files           yanputhesis.ins,
 %% 设置论文格式（学位、盲评、Adobe 字体）
 %%-----------------------------------------------------------------------------%
 %% 博士、正常版本、不使用 Adobe 字体
-%% \documentclass[lang=chs, degree=phd, blindreview=false, adobe=false]{yanputhesis}
+%% \documentclass[lang=chs, degree=master, blindreview=false, adobe=false]{yanputhesis}
 %% 博士、盲评版本、不使用 Adobe 字体
-%% \documentclass[lang=chs, degree=phd, blindreview=true, adobe=false]{yanputhesis}
+%% \documentclass[lang=chs, degree=master, blindreview=true, adobe=false]{yanputhesis}
 %% 博士、正常版本、强制使用 Windows 系统字体
-\documentclass[lang=chs, degree=phd, blindreview=false, winfonts=true]{yanputhesis}
+\documentclass[lang=chs, degree=master, blindreview=false, winfonts=true]{yanputhesis}
 %% 硕士、正常版本、不使用 Adobe 字体
 %% \documentclass[lang=chs, degree=master, blindreview=false, adobe=false]{yanputhesis}
 %% 硕士、盲评版本、不使用 Adobe 字体
@@ -715,7 +715,7 @@ int main()
 \DeclareOptionX{winfonts}[true]{\csname @npu@font@winfonts#1\endcsname}
 \DeclareOptionX*{\PassOptionsToClass{\CurrentOption}{book}} % 传递参数到 book 类
 \ExecuteOptionsX{lang=chs}                                  % 默认为中文版本
-\ExecuteOptionsX{degree=phd}                                % 默认为博士版本
+\ExecuteOptionsX{degree=master}                                % 默认为博士版本
 \ExecuteOptionsX{blindreview=false}                         % 默认不开启盲评模式
 \ExecuteOptionsX{adobe=false}                               % 默认不用 Adobe 字体
 \ExecuteOptionsX{winfonts=false}                            % 默认不开启强制选项

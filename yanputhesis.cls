@@ -39,7 +39,7 @@
 \DeclareOptionX{winfonts}[true]{\csname @npu@font@winfonts#1\endcsname}
 \DeclareOptionX*{\PassOptionsToClass{\CurrentOption}{book}} % 传递参数到 book 类
 \ExecuteOptionsX{lang=chs}                                  % 默认为中文版本
-\ExecuteOptionsX{degree=phd}                                % 默认为博士版本
+\ExecuteOptionsX{degree=master}                                % 默认为博士版本
 \ExecuteOptionsX{blindreview=false}                         % 默认不开启盲评模式
 \ExecuteOptionsX{adobe=false}                               % 默认不用 Adobe 字体
 \ExecuteOptionsX{winfonts=false}                            % 默认不开启强制选项
